@@ -5,7 +5,7 @@ Vastra (Myntra Clone) is a one stop shop for all your fashion and lifestyle need
 
 # <span style="color:red"> Tech Stack Used: </span>
 
-I have used React, Chakra, JS, Html, Css to made this project.
+I have used React, Chakra, Redux, JavaScript, Html, Css to made this project.
 
 ### Snapshots of Vestra project :- 
 
