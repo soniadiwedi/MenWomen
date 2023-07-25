@@ -1,4 +1,4 @@
-# <span style="color:red">[Vestra](https://64bfc439f0febd63c42d218d--zippy-pothos-464869.netlify.app/) Clone of [Myntra.com](https://www.Myntra.com/) Website </span>
+# <span style="color:red">[Vestra]([https://64bfc439f0febd63c42d218d--zippy-pothos-464869.netlify.app/](https://vastra-myntra-clone-2fc78b.netlify.app/)) Clone of [Myntra.com](https://www.Myntra.com/) Website </span>
 # <span style="color:red"> Welcome to Vastra</span>
 
 Vastra (Myntra Clone) is a one top shop for all your fashion and lifestyle needs. Being India's largest e-commerce store for fashion and lifestyle products, a hassle free and enjoyable shopping experience to shoppers across the country with the widest range of brands and products on its portal.
