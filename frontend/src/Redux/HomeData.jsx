@@ -1,9 +1,9 @@
 import axios from "axios";
 
 export const HomeData = async () => {
-  // let res = await axios.get("https://vastra.onrender.com/HomePageData");
-  // console.log(res.data)
-   let res= await axios.get("http://localhost:8080/HomePageData")
+ 
+
+   let res= await axios.get("https://myntra-clone-ag3u.onrender.com/HomePageData")
    console.log(res.data)
   return res.data;
 };

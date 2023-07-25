@@ -1,12 +1,12 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
-import { PageNotFound } from '../Pages/PageNotFound'
+
 import { Home } from '../Pages/Home'
-import { Product } from '../Pages/Product'
+
 import { WomensProduct } from '../Pages/WomensProduct'
 import { KidsProduct } from '../Pages/KidsProduct'
 import { SingleProductPage } from '../Pages/SingleProductPage'
-import { Wishlist } from '../Pages/Wishlist'
+import Wishlist from "../Pages/Wishlist"
 import { Cart } from '../Pages/Cart'
 import { LoginOrSignUp } from '../Pages/LoginOrSignUp'
 import { FullDetails } from '../Pages/FullDetails'
@@ -15,11 +15,12 @@ import { Address } from '../Pages/Address'
 import { Payment } from '../Pages/Payment'
 import { Success } from '../Pages/Success'
 import { AddProductPage } from './AddProductPage'
+import Product from '../Pages/Product'
+import PageNotFound from '../Pages/PageNotFound copy'
 
 export const AllRoutes = () => {
   return (
     <Routes>
-        {/* <Route path="/" element={<Navbar />}></Route> */}
         <Route path="*" element={<PageNotFound />}></Route>
         <Route path="/" element={<Home />}></Route>
         <Route path="/men" element={<Product />}></Route>
