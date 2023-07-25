@@ -1,7 +1,11 @@
 import React from 'react'
+import Navbar from '../Components/Navbar/Navbar'
 
 export const Home = () => {
   return (
-    <div>Home</div>
+    <div className='grandFather'>
+      <Navbar/>
+
+    </div>
   )
 }
