@@ -5,7 +5,7 @@ import {
 } from "@chakra-ui/react";
 import { useNavigate } from "react-router-dom";
 import Navbar from '../Components/Navbar/Navbar'
-
+import error500 from "../Image/error500.png"
 
 export default function PageNotFound() {
   const navigate = useNavigate();
@@ -13,16 +13,7 @@ export default function PageNotFound() {
     <>
       <Navbar />
       <Box mt={"70px"} textAlign="center" py={10} px={6}>
-        {/* <Heading
-        fontSize="100px"
-        display="inline-block"
-        as="h1"
-        bgGradient="linear( red, #2b3148)"
-        backgroundClip="text"
-      >
-          404
-      </Heading> */}
-        <img style={{ widows: "40%", height: "400px", margin: "auto" }} src="ErrorNew500.jpg" alt="Error500" />
+        <img style={{ widows: "40%", height: "400px", margin: "auto" }} src={error500} alt="Error500" />
         <Text
           fontSize="40px"
           backgroundClip="text"

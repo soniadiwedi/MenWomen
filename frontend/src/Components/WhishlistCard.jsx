@@ -6,7 +6,8 @@ import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { fetchCartData } from "../Redux/Cart/Cart.action";
 import { fetchWishlistData, removeProdData } from "../Redux/Wishlist/Wishlist.action";
-
+import { toast, ToastContainer } from 'react-toastify';
+import "react-toastify/dist/ReactToastify.css";
 const WishlistCard = ({ prod }) => {
 
   //console.log(prod);
@@ -20,17 +21,28 @@ useEffect(()=>{
   const addToBag = async () => {
     // console.log("newItem:",props)
     await axios
-      .post(`https://vastra.onrender.com/cart/`, prod)
+      .post(`https://myntra-clone-ag3u.onrender.com/cart/`, prod)
       .then((res) => {
-        alert("Added to bag Successfully....");
+        toast.success("Added to bag Successfully....", {
+          position: toast.POSITION.TOP_CENTER
+        })
         dispatch(fetchCartData()) 
         dispatch(removeProdData(id));
       })
-      .catch((err) => alert("Already Exists in Your Bag"));
+      .catch((err) =>  toast.error("Already Exists in Your Bag", {
+        position: toast.POSITION.TOP_CENTER
+      }));
   };
 
   const removeFromWishlist=()=>{
-    dispatch(removeProdData(id))
+    dispatch(removeProdData(id)).then((res) => {
+      toast.success("Removed", {
+        position: toast.POSITION.TOP_CENTER
+      })
+    }).catch((err) =>  toast.success("Aready removed", {
+      position: toast.POSITION.TOP_CENTER
+    }));
+
 }
 
   return (

@@ -1,13 +1,14 @@
 import { legacy_createStore, applyMiddleware, compose, combineReducers } from "redux"
 import thunk from "redux-thunk"
 
-import { mensProductReducer } from "./Product/Product.reducer"
+import { KidsProductReducer, WomensProductReducer, mensProductReducer } from "./Product/Product.reducer"
 import {wishlistReducer} from "./Wishlist/Wishlist.reducer"
 import {cartReducer} from "./Cart/Cart.reducer"
 
 const rootReducer = combineReducers({
     mens: mensProductReducer,
-    
+    womens: WomensProductReducer,
+    kids: KidsProductReducer,
     wishlist: wishlistReducer,
     cart: cartReducer,
 })

@@ -3,9 +3,9 @@ import { Route, Routes } from 'react-router-dom'
 
 import { Home } from '../Pages/Home'
 
-import { WomensProduct } from '../Pages/WomensProduct'
-import { KidsProduct } from '../Pages/KidsProduct'
-import { SingleProductPage } from '../Pages/SingleProductPage'
+import WomensProduct  from '../Pages/WomensProduct'
+import  KidsProduct  from '../Pages/KidsProduct'
+import SingleProductPage  from '../Pages/SingleProductPage'
 import Wishlist from "../Pages/Wishlist"
 import { Cart } from '../Pages/Cart'
 import { LoginOrSignUp } from '../Pages/LoginOrSignUp'
@@ -26,7 +26,7 @@ export const AllRoutes = () => {
         <Route path="/men" element={<Product />}></Route>
         <Route path="/women" element={<WomensProduct />}></Route>
         <Route path="/kids" element={<KidsProduct />}></Route>
-        <Route path="/product/:id" element={<SingleProductPage />}></Route>
+        <Route path="/singleproduct/:id" element={<SingleProductPage />}></Route>
         <Route path="/wishlist" element={<Wishlist />}></Route>
         <Route path="/bag" element={<Cart />} ></Route>
         <Route path="/login" element={<LoginOrSignUp />} />

@@ -32,8 +32,8 @@ if(error){
         <Box  textAlign={"left"} ml={'44'}  px={4} mt={'7rem'} color={"gray.600"} fontSize={"1.2rem"}>
           <Text px={4} border="1px solid grey" borderRadius={15}  fontWeight={600} color={"pink.500"} display={"inline-block"}>
             My WishList : -
-              <span style={{color:'gray'}} >   {wishlistData.length} 
-                  Items
+              <span style={{color:'gray'}} >  {wishlistData.length} Items
+                  
               </span>
           </Text>
         </Box>

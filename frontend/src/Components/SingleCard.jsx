@@ -14,7 +14,10 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { fetchCartData } from "../Redux/Cart/Cart.action";
-// import { fetchCartData } from "../Redux/Cart/Cart.action";
+import { toast, ToastContainer } from 'react-toastify';
+import "react-toastify/dist/ReactToastify.css";
+
+
 function SingleCard({ ...props }) {
   const dispatch = useDispatch();
 
@@ -37,11 +40,17 @@ function SingleCard({ ...props }) {
       await axios
         .post(`https://myntra-clone-ag3u.onrender.com/WishList/`, prod)
         .then((res) => {
-          alert("Added to Wishlist Successfully....");
+          toast.success("Added to Wishlist Successfully....", {
+        position: toast.POSITION.TOP_CENTER
+      });
+         
           dispatch(fetchCartData());
         })
 
-        .catch((err) => alert("Already Exists"));
+        .catch((err) =>toast.error("Already Exists in Your wishlist", {
+          position: toast.POSITION.TOP_LEFT
+        })
+        );
     
   };
 
@@ -53,7 +62,7 @@ function SingleCard({ ...props }) {
     >
       <CardBody textAlign={"left"}>
         <Stack spacing={2}>
-          <Box onClick={() => navigate(`/product/${id}`)}>
+          <Box onClick={() => navigate(`/singleproduct/${id}`)}>
             <Image
               src={images[0]}
               width={"100%"}

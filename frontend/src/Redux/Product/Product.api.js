@@ -1,34 +1,34 @@
 import axios from "axios"
 
 export const getMensProductsAPI = async (page) => {
-    let res = await axios.get(`https://myntra-clone-ag3u.onrender.com//MensData?_limit=12&_page=${page}`)
+    let res = await axios.get(`https://myntra-clone-ag3u.onrender.com/MensData?_limit=12&_page=${page}`)
     // console.log(res.data)
     return res
 }
 
 export const getSingleProductAPI = async (id) => {
-    let res = await axios.get(`https://myntra-clone-ag3u.onrender.com//MensData/${id}`)
+    let res = await axios.get(`https://myntra-clone-ag3u.onrender.com/MensData/${id}`)
     return res
 }
 
 // sorting api calls
-let baseURL = `https://myntra-clone-ag3u.onrender.com//MensData?_limit=12&`
+let baseURL = `https://myntra-clone-ag3u.onrender.com/MensData?_limit=12&`
 
 export const getProductsSorting = async (val, page) => {
     if (val === "PriceLTH") {
-        let res = await axios.get(`https://myntra-clone-ag3u.onrender.com//MensData?_limit=12&_page=${page}&_sort=discounted_price&_order=asc`)
+        let res = await axios.get(`https://myntra-clone-ag3u.onrender.com/MensData?_limit=12&_page=${page}&_sort=discounted_price&_order=asc`)
         return res
     }
     if (val === "PriceHTL") {
-        let res = await axios.get(`https://myntra-clone-ag3u.onrender.com//MensData?_limit=12&_page=${page}&_sort=discounted_price&_order=desc`)
+        let res = await axios.get(`https://myntra-clone-ag3u.onrender.com/MensData?_limit=12&_page=${page}&_sort=discounted_price&_order=desc`)
         return res
     }
     if (val === "discount") {
-        let res = await axios.get(`https://myntra-clone-ag3u.onrender.com//MensData?_limit=12&_page=${page}&_sort=${val}&_order=desc`)
+        let res = await axios.get(`https://myntra-clone-ag3u.onrender.com/MensData?_limit=12&_page=${page}&_sort=${val}&_order=desc`)
         return res
     }
     if (val === "rating") {
-        let res = await axios.get(`https://myntra-clone-ag3u.onrender.com//MensData?_limit=12&_page=${page}&_sort=${val}&_order=desc`)
+        let res = await axios.get(`https://myntra-clone-ag3u.onrender.com/MensData?_limit=12&_page=${page}&_sort=${val}&_order=desc`)
         return res
     } else {
         let res = await axios.get(`${baseURL}`)
@@ -40,7 +40,7 @@ export const getProductsSorting = async (val, page) => {
 export const getFilterByBrand = async (val, page) => {
     val = (val.toString())
     // console.log(val)
-    let res = await axios.get(`https://myntra-clone-ag3u.onrender.com//MensData?_limit=12&_page=${page}&brand=${val}`)
+    let res = await axios.get(`https://myntra-clone-ag3u.onrender.com/MensData?_limit=12&_page=${page}&brand=${val}`)
 
     return res
     // console.log(res.data)
@@ -48,33 +48,33 @@ export const getFilterByBrand = async (val, page) => {
 
 // --Women--Section--
 export const getWomensProductsAPI = async (page) => {
-    let res = await axios.get(`https://myntra-clone-ag3u.onrender.com//WomensData?_limit=12&_page=${page}`)
+    let res = await axios.get(`https://myntra-clone-ag3u.onrender.com/WomensData?_limit=12&_page=${page}`)
     // console.log(res.data)
     return res
 }
 export const getWomensSingleProductAPI = async (id) => {
-    let res = await axios.get(`https://myntra-clone-ag3u.onrender.com//WomensData/${id}`)
+    let res = await axios.get(`https://myntra-clone-ag3u.onrender.com/WomensData/${id}`)
     return res
 }
 
 // sorting api calls
-let WomensbaseURL = `https://myntra-clone-ag3u.onrender.com//WomensData?_limit=12&`
+let WomensbaseURL = `https://myntra-clone-ag3u.onrender.com/WomensData?_limit=12&`
 
 export const getWomensProductsSorting = async (val, page) => {
     if (val === "PriceLTH") {
-        let res = await axios.get(`https://myntra-clone-ag3u.onrender.com//WomensData?_limit=12&_page=${page}&_sort=discounted_price&_order=asc`)
+        let res = await axios.get(`https://myntra-clone-ag3u.onrender.com/WomensData?_limit=12&_page=${page}&_sort=discounted_price&_order=asc`)
         return res
     }
     if (val === "PriceHTL") {
-        let res = await axios.get(`https://myntra-clone-ag3u.onrender.com//WomensData?_limit=12&_page=${page}&_sort=discounted_price&_order=desc`)
+        let res = await axios.get(`https://myntra-clone-ag3u.onrender.com/WomensData?_limit=12&_page=${page}&_sort=discounted_price&_order=desc`)
         return res
     }
     if (val === "discount") {
-        let res = await axios.get(`https://myntra-clone-ag3u.onrender.com//WomensData?_limit=12&_page=${page}&_sort=${val}&_order=desc`)
+        let res = await axios.get(`https://myntra-clone-ag3u.onrender.com/WomensData?_limit=12&_page=${page}&_sort=${val}&_order=desc`)
         return res
     }
     if (val === "rating") {
-        let res = await axios.get(`https://myntra-clone-ag3u.onrender.com//WomensData?_limit=12&_page=${page}&_sort=${val}&_order=desc`)
+        let res = await axios.get(`https://myntra-clone-ag3u.onrender.com/WomensData?_limit=12&_page=${page}&_sort=${val}&_order=desc`)
         return res
     } else {
         let res = await axios.get(`${WomensbaseURL}`)
@@ -86,7 +86,7 @@ export const getWomensProductsSorting = async (val, page) => {
 export const getWomensFilterByBrand = async (val, page) => {
     val = (val.toString())
     // console.log(val)
-    let res = await axios.get(`https://myntra-clone-ag3u.onrender.com//WomensData?_limit=12&_page=${page}&brand=${val}`)
+    let res = await axios.get(`https://myntra-clone-ag3u.onrender.com/WomensData?_limit=12&_page=${page}&brand=${val}`)
 
     return res
     // console.log(res.data)
@@ -94,33 +94,33 @@ export const getWomensFilterByBrand = async (val, page) => {
 
 // --Kids--Section--
 export const getKidsProductsAPI = async (page) => {
-    let res = await axios.get(`https://myntra-clone-ag3u.onrender.com//ChildData?_limit=12&_page=${page}`)
+    let res = await axios.get(`https://myntra-clone-ag3u.onrender.com/ChildData?_limit=12&_page=${page}`)
     // console.log(res.data)
     return res
 }
 export const getKidsSingleProductAPI = async (id) => {
-    let res = await axios.get(`https://myntra-clone-ag3u.onrender.com//ChildData/${id}`)
+    let res = await axios.get(`https://myntra-clone-ag3u.onrender.com/ChildData/${id}`)
     return res
 }
 
 // sorting api calls
-let KidsbaseURL = `https://myntra-clone-ag3u.onrender.com//ChildData?_limit=12&`
+let KidsbaseURL = `https://myntra-clone-ag3u.onrender.com/ChildData?_limit=12&`
 
 export const getKidsProductsSorting = async (val, page) => {
     if (val === "PriceLTH") {
-        let res = await axios.get(`https://myntra-clone-ag3u.onrender.com//ChildData?_limit=12&_page=${page}&_sort=discounted_price&_order=asc`)
+        let res = await axios.get(`https://myntra-clone-ag3u.onrender.com/ChildData?_limit=12&_page=${page}&_sort=discounted_price&_order=asc`)
         return res
     }
     if (val === "PriceHTL") {
-        let res = await axios.get(`https://myntra-clone-ag3u.onrender.com//ChildData?_limit=12&_page=${page}&_sort=discounted_price&_order=desc`)
+        let res = await axios.get(`https://myntra-clone-ag3u.onrender.com/ChildData?_limit=12&_page=${page}&_sort=discounted_price&_order=desc`)
         return res
     }
     if (val === "discount") {
-        let res = await axios.get(`https://myntra-clone-ag3u.onrender.com//ChildData?_limit=12&_page=${page}&_sort=${val}&_order=desc`)
+        let res = await axios.get(`https://myntra-clone-ag3u.onrender.com/ChildData?_limit=12&_page=${page}&_sort=${val}&_order=desc`)
         return res
     }
     if (val === "rating") {
-        let res = await axios.get(`https://myntra-clone-ag3u.onrender.com//ChildData?_limit=12&_page=${page}&_sort=${val}&_order=desc`)
+        let res = await axios.get(`https://myntra-clone-ag3u.onrender.com/ChildData?_limit=12&_page=${page}&_sort=${val}&_order=desc`)
         return res
     } else {
         let res = await axios.get(`${KidsbaseURL}`)
@@ -132,7 +132,7 @@ export const getKidsProductsSorting = async (val, page) => {
 export const getKidsFilterByBrand = async (val, page) => {
     val = (val.toString())
     // console.log(val)
-    let res = await axios.get(`https://myntra-clone-ag3u.onrender.com//ChildData?_limit=12&_page=${page}&brand=${val}`)
+    let res = await axios.get(`https://myntra-clone-ag3u.onrender.com/ChildData?_limit=12&_page=${page}&brand=${val}`)
 
     return res
     // console.log(res.data)
