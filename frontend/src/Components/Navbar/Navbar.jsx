@@ -8,7 +8,7 @@ import { HomeLivingNav } from "./Home&Living";
 import { MenNav } from "./Men";
 import { StudioNav } from "./Studio";
 import Logo from "../../Logo.png"
-
+import admin from "../../Image/admin.png"
 const Div = styled.nav`
   position: fixed;
   display: flex;
@@ -295,7 +295,7 @@ const Navbar = () => {
                     width: "20px",
                     marginBottom: "5px",
                   }}
-                  src="/admin.png"
+                  src={admin}
                   alt=""
                 />
                 Admin
