@@ -9,19 +9,19 @@ import SingleProductPage  from '../Pages/SingleProductPage'
 import Wishlist from "../Pages/Wishlist"
 import  Cart  from '../Pages/Cart'
 import { LoginOrSignUp } from '../Pages/LoginOrSignUp'
-import { FullDetails } from '../Pages/FullDetails'
-import { SeeFullDetails } from '../Pages/SeeFullDetails'
 import Address  from '../Pages/Address'
 import  Payment  from '../Pages/Payment'
 import  Success  from '../Pages/Success'
-import { AddProductPage } from './AddProductPage'
 import Product from '../Pages/Product'
 import PageNotFound from '../Pages/PageNotFound copy'
+import { SeeFullDetails } from '../Pages/SeeFullDetails'
+import { FullDetails } from '../Pages/FullDetails'
+
 
 export const AllRoutes = () => {
   return (
     <Routes>
-        <Route path="*" element={<PageNotFound />}></Route>
+       <Route path="*" element={<PageNotFound />}></Route>
         <Route path="/" element={<Home />}></Route>
         <Route path="/men" element={<Product />}></Route>
         <Route path="/women" element={<WomensProduct />}></Route>
@@ -36,6 +36,8 @@ export const AllRoutes = () => {
         <Route path="/payment" element={<Payment />}></Route>
         <Route path="/success" element={<Success />} ></Route>
         {/* <Route path="/admin-dashboard" element={<AdminDashboard />}></Route> */}
+       
+        
        
       </Routes>
   )
