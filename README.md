@@ -11,6 +11,7 @@ I have used React, Chakra, Redux, JavaScript, Html, Css to made this project.
 
 - ## <span style="color:blue"> Home Page: Header & Carousel </span>
 <br />
+
 ![image](https://github.com/soniadiwedi/Myntra_clone/assets/112754761/3adbf972-fe62-46be-aa9e-e7d3b10d8db8)
 
 - ## <span style="color:blue"> Men Page </span>
