@@ -13,3 +13,5 @@ export const deleteCartAPI = async (id) => {
     //console.log(res?.data)
     return res
 }
+
+
