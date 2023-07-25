@@ -6680,9 +6680,9 @@
         }
     ],
     "AdminData":{"id":1,
-            "name":"Devendra Singh",
-            "email":"dev@gmail.com",
-            "password":"dev12345",
+            "name":"Sonia Diwedi",
+            "email":"soniadiwedi@gmail.com",
+            "password":"sonia12345",
             "contact":12345
         },
         "CurrentUser":{
